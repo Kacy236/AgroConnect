@@ -8,7 +8,7 @@ import { RIDER } from '@/data/seed'
 import { longDate } from '@/lib/utils'
 import './OrderTrackingPage.css'
 
-const STATUS_COPY: Record<string, string> = {
+const STATUS_COPY = {
   pending: 'Awaiting farmer confirmation',
   processing: 'Preparing your order',
   'in-transit': 'Out for Delivery',
