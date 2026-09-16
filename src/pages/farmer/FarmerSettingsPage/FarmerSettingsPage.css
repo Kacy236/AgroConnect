@@ -1,0 +1,158 @@
+/* Layout Container */
+.settings-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 42rem; /* max-w-2xl */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .settings-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Sections & Dividers */
+.settings-section {
+  overflow: hidden;
+}
+
+/* Replicates 'divide-y divide-ink-line' */
+.settings-section > *:not(:last-child) {
+  border-bottom: 1px solid var(--color-ink-line, #e2e8f0);
+}
+
+/* Row Component */
+.settings-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.settings-row:hover {
+  background-color: rgba(239, 246, 255, 0.5); /* hover:bg-brand-50/50 */
+}
+
+.row-icon-wrapper {
+  flex-shrink: 0;
+}
+
+.row-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.row-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+.row-subtitle {
+  display: block;
+  font-size: 15px;
+  color: var(--color-ink-soft, #64748b);
+}
+
+.row-trailing {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  color: var(--color-ink-soft, #64748b);
+}
+
+/* Icons */
+.chevron-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: var(--color-ink-soft, #64748b);
+}
+
+.lucide-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.text-brand {
+  color: var(--color-brand-500, #3b82f6);
+}
+
+.text-ink {
+  color: var(--color-ink, #0f172a);
+}
+
+/* Header Elements */
+.header-bell-wrapper {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ink, #0f172a);
+}
+
+.header-bell-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Logout Button */
+.logout-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.logout-button:hover {
+  background-color: rgba(254, 226, 226, 0.5); /* hover:bg-red-50/50 */
+}
+
+.logout-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  color: #ef4444;
+}
+
+.logout-text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+/* Custom Lock Icon */
+.lock-icon-wrapper {
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: var(--color-brand-50, #eff6ff);
+}
+
+.lock-icon-svg {
+  height: 1rem;
+  width: 1rem;
+  color: var(--color-brand-600, #2563eb);
+}

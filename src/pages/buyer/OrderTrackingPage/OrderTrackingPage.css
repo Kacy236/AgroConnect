@@ -1,0 +1,145 @@
+:root {
+  --ink: #111827;
+  --ink-mute: #9ca3af;
+  --brand-accent: #16a34a;
+  --brand-accent-light: #f0fdf4;
+  --border-light: 1px solid #e5e7eb;
+  --bg-color: #ffffff;
+  --shadow-lift: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tracking-page-container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+
+/* Order Details Section */
+.tracking-details-card {
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border: var(--border-light);
+  border-radius: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .tracking-details-card {
+    margin: 0 2rem;
+  }
+}
+
+.tracking-label {
+  font-size: 0.9375rem; /* 15px */
+  color: var(--ink-mute);
+  margin: 0;
+}
+
+.tracking-label.mt-4 {
+  margin-top: 1rem;
+}
+
+.tracking-value {
+  margin: 0.125rem 0 0 0;
+  font-size: 1.0625rem; /* 17px */
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tracking-value-accent {
+  margin: 0.125rem 0 0 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--brand-accent);
+}
+
+/* Map & Rider Overlay Section */
+.tracking-map-wrapper {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.rider-card {
+  position: relative;
+  z-index: 20;
+  margin: -1.5rem 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bg-color);
+  border: var(--border-light);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  box-shadow: var(--shadow-lift);
+}
+
+@media (min-width: 1024px) {
+  .rider-card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.rider-avatar {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rider-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.rider-name {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rider-role {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-mute);
+}
+
+.call-rider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: var(--brand-accent);
+  background: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.call-rider-btn:hover {
+  background-color: var(--brand-accent-light);
+}
+
+.call-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Actions */
+.tracking-action {
+  margin: 1.5rem 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .tracking-action {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+.role-title { font-size: 32px; font-weight: 800; line-height: 1.2; color: var(--ink); }
+.role-subtitle { margin-top: 1rem; font-size: 17px; color: var(--ink-soft); }
+
+.role-options { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+
+.role-option {
+  display: flex; width: 100%; align-items: center; gap: 1rem; border-radius: 0.75rem;
+  border: 1px solid transparent; padding: 0.75rem; text-align: left; transition: background-color .15s, border-color .15s;
+}
+.role-option:hover { background: rgba(242, 249, 241, 0.4); }
+.role-option-active { border-color: var(--brand-300); background: rgba(242, 249, 241, 0.7); box-shadow: var(--shadow-card); }
+
+.role-option-image { height: 68px; width: 104px; flex-shrink: 0; border-radius: 0.5rem; object-fit: cover; }
+
+.role-option-text { min-width: 0; }
+.role-option-title { display: block; font-size: 17px; font-weight: 700; color: var(--ink); }
+.role-option-blurb { margin-top: 0.125rem; display: block; font-size: 15px; line-height: 1.3; color: var(--ink-soft); }
+
+.role-actions { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.75rem; }

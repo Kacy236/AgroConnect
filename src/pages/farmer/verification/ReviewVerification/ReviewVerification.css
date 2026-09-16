@@ -1,0 +1,27 @@
+.review-verif { display: flex; flex-direction: column; gap: 1.5rem; }
+.review-tick { width: 20px; height: 20px; }
+
+.review-checks { display: flex; flex-direction: column; gap: 0.75rem; border-radius: 0.75rem; background: rgba(242, 249, 241, 0.6); padding: 1rem; }
+.review-check-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; border-radius: 0.5rem;
+  border: 1px solid var(--ink-line); background: #fff; padding: 0.75rem 1rem;
+}
+.review-check-label { font-size: 15px; color: var(--ink); }
+.review-check-status { display: flex; align-items: center; gap: 0.5rem; }
+.review-check-text { font-size: 15px; font-weight: 500; color: var(--ink-mute); }
+.review-check-text-done { color: var(--brand-600); }
+
+.review-score-title { margin-bottom: 0.5rem; font-size: 15px; font-weight: 700; color: var(--ink); }
+.review-score-card {
+  display: flex; flex-direction: column; align-items: center; gap: 1.5rem; padding: 1.5rem;
+}
+.review-score-gauge { text-align: center; }
+.review-score-caption { margin-top: 0.5rem; font-size: 17px; font-weight: 700; color: var(--ink); }
+.review-score-list { width: 100%; max-width: 220px; display: flex; flex-direction: column; gap: 0.75rem; }
+.review-score-row { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.review-score-label { font-size: 15px; color: var(--ink); }
+.review-score-value { font-size: 15px; font-weight: 700; color: var(--ink); }
+
+@media (min-width: 640px) {
+  .review-score-card { flex-direction: row; justify-content: space-around; }
+}

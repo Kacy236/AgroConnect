@@ -1,0 +1,74 @@
+.farmer-dash { padding: 0 1rem 2.5rem; }
+
+.farmer-dash-banner {
+  margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden;
+  border-radius: 0.75rem; border: 1px solid var(--brand-100); background: rgba(242, 249, 241, 0.8); padding: 1rem;
+}
+.farmer-dash-banner-left { display: flex; align-items: center; gap: 1rem; }
+.farmer-dash-banner-right { display: flex; align-items: center; gap: 0.75rem; }
+.farmer-dash-banner-img { flex-shrink: 0; border-radius: 0.5rem; object-fit: cover; }
+.farmer-dash-banner-img-sm { display: none; height: 4rem; width: 6rem; }
+.farmer-dash-banner-img-lg { display: none; height: 3.5rem; width: 5rem; }
+
+.farmer-dash-farm-name { font-size: 22px; font-weight: 700; color: var(--brand-600); }
+.farmer-dash-farm-meta { margin-top: 0.125rem; font-size: 15px; color: var(--ink-soft); }
+.farmer-dash-new-listing { flex-shrink: 0; }
+
+.farmer-dash-mobile-search { margin-top: 1rem; }
+
+.farmer-dash-overview { margin-top: 1.5rem; }
+.farmer-dash-section-title { margin-bottom: 0.75rem; font-size: 17px; font-weight: 700; color: var(--ink); }
+.farmer-dash-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.farmer-dash-stat-span-2 { grid-column: span 2; }
+.farmer-dash-naira {
+  display: flex; height: 1.5rem; width: 1.5rem; align-items: center; justify-content: center;
+  border-radius: 9999px; background: #2F5FD0; font-size: 13px; font-weight: 700; color: #fff;
+}
+
+.farmer-dash-recent { margin-top: 1.75rem; }
+.farmer-dash-recent-header { margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.farmer-dash-message-link { display: flex; align-items: center; gap: 0.5rem; font-size: 15px; font-weight: 700; color: var(--brand-600); }
+.farmer-dash-message-link:hover { text-decoration: underline; }
+
+.farmer-dash-table-wrap { display: none; }
+.farmer-dash-mobile-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.farmer-dash-mobile-item { display: flex; align-items: center; gap: 0.75rem; border-radius: 0.5rem; border: 1px solid var(--ink-line); padding: 0.625rem 0.75rem; }
+.farmer-dash-mobile-img { height: 3rem; width: 3.5rem; flex-shrink: 0; border-radius: 0.25rem; object-fit: contain; }
+.farmer-dash-mobile-text { min-width: 0; flex: 1; }
+.farmer-dash-mobile-name { font-size: 15px; font-weight: 700; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.farmer-dash-mobile-qty { font-weight: 400; color: var(--ink-soft); }
+.farmer-dash-mobile-id { font-size: 0.875rem; color: var(--ink-mute); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.farmer-dash-mobile-amount { flex-shrink: 0; text-align: right; }
+.farmer-dash-mobile-amount-value { font-size: 15px; font-weight: 700; color: var(--ink); }
+.farmer-dash-mobile-amount-status { font-size: 0.875rem; font-weight: 600; color: var(--brand-600); }
+
+.farmer-dash-view-all { margin-top: 1rem; }
+
+@media (min-width: 1024px) {
+  .farmer-dash { padding-left: 2rem; padding-right: 2rem; }
+  .farmer-dash-banner { flex-direction: row; align-items: center; justify-content: space-between; padding: 1.25rem; }
+  .farmer-dash-banner-img-lg { display: block; }
+  .farmer-dash-mobile-search { display: none; }
+  .farmer-dash-stats { grid-template-columns: repeat(5, 1fr); }
+  .farmer-dash-stat-span-1 { grid-column: span 1; }
+  .farmer-dash-stat-span-2 { grid-column: span 1; }
+  .farmer-dash-table-wrap { display: block; overflow: hidden; border-radius: 0.75rem; border: 1px solid var(--ink-line); }
+  .farmer-dash-table { width: 100%; text-align: left; border-collapse: collapse; }
+  .farmer-dash-table-head-row { font-size: 15px; color: var(--ink-soft); }
+  .farmer-dash-th { padding: 0.75rem 1.25rem; font-weight: 500; }
+  .farmer-dash-th-right { text-align: right; }
+  .farmer-dash-tbody { }
+  .farmer-dash-tr { border-top: 1px solid var(--ink-line); transition: background-color .15s; }
+  .farmer-dash-tr:hover { background: rgba(242, 249, 241, 0.4); }
+  .farmer-dash-td { padding: 0.75rem 1.25rem; }
+  .farmer-dash-td-img { height: 3.5rem; width: 4rem; border-radius: 0.25rem; object-fit: contain; }
+  .farmer-dash-td-text { font-size: 15px; color: var(--ink); }
+  .farmer-dash-td-right { text-align: right; }
+  .farmer-dash-td-bold { font-size: 15px; font-weight: 700; color: var(--ink); }
+  .farmer-dash-mobile-list { display: none; }
+  .farmer-dash-view-all { display: none; }
+}
+
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .farmer-dash-banner-img-sm { display: block; }
+}

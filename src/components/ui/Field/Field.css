@@ -1,0 +1,26 @@
+.field-wrap { width: 100%; }
+.field-label { margin-bottom: 0.375rem; display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+.field-error { margin-top: 0.25rem; font-size: 0.75rem; font-weight: 500; color: #dc2626; }
+.field-hint { margin-top: 0.25rem; font-size: 0.75rem; color: var(--ink-mute); }
+
+.field-input-wrap { position: relative; }
+.field-icon { pointer-events: none; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--ink-mute); display: flex; }
+
+/* Added !important to guarantee these override global .field padding */
+.field-has-icon { padding-left: 2.75rem !important; }
+.field-has-reveal { padding-right: 2.75rem !important; }
+
+.field-reveal-btn {
+  position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); border-radius: 9999px;
+  padding: 0.375rem; color: var(--ink-mute); transition: color .15s;
+}
+.field-reveal-btn:hover { color: var(--ink); }
+
+.field-select { appearance: none; padding-right: 2.5rem; }
+.field-select-placeholder { color: var(--ink-mute); }
+.field-select-chevron {
+  pointer-events: none; position: absolute; right: 0.875rem; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; color: var(--ink-mute);
+}
+
+.field-textarea { min-height: 104px; resize: none; line-height: 1.6; }

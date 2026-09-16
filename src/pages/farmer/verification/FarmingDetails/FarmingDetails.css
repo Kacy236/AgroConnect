@@ -1,0 +1,25 @@
+.farming-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.farming-legend { margin-bottom: 0.75rem; font-size: 22px; font-weight: 800; color: var(--ink); }
+.farming-legend-sub { font-size: 17px; font-weight: 500; color: var(--ink-soft); }
+
+.farming-type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.farming-type {
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem; border-radius: 0.75rem;
+  border: 2px solid var(--ink-line); background: #fff; padding: 1rem 0.5rem; transition: background-color .15s, border-color .15s;
+}
+.farming-type:hover { background: rgba(242, 249, 241, 0.4); }
+.farming-type-active { border-color: var(--brand-600); background: #fff; }
+
+.farming-type-icon {
+  display: flex; height: 2.75rem; width: 2.75rem; align-items: center; justify-content: center; border-radius: 9999px;
+}
+.farming-type-icon-brand { background: var(--brand-50); color: var(--brand-600); }
+.farming-type-icon-ink { background: rgba(231, 234, 230, 0.5); color: var(--ink); }
+.farming-type-icon-blue { background: #E4F0FB; color: #2F8FD8; }
+
+.farming-type-label { font-size: 15px; font-weight: 700; color: var(--ink); }
+.farming-type-label-active { color: var(--brand-600); }
+
+.farming-crops { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+.farming-error { font-size: 0.875rem; font-weight: 500; color: #dc2626; }

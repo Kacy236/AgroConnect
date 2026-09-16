@@ -1,0 +1,144 @@
+.metric-layout-page {
+  /* Neubrutalism Color Variables */
+  --ink: #000000;
+  --ink-soft: #4b5563;
+  --brand-accent: #4ade80; /* High contrast green */
+  --error-accent: #ef4444; /* High contrast red */
+  --border-black: 2.5px solid #000;
+  --shadow-brutal: 4px 4px 0 0 #000;
+  --shadow-sm: 2px 2px 0 0 #000;
+}
+
+.metric-layout-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 48rem; /* Matches max-w-3xl */
+  padding: 0 1rem 3rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .metric-layout-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* --- Period Select Component --- */
+.period-select-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.period-select-label {
+  position: relative;
+  display: inline-flex;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.period-select {
+  appearance: none;
+  border-radius: 0.5rem;
+  border: var(--border-black);
+  background-color: #ffffff;
+  padding: 0.625rem 2.25rem 0.625rem 1rem;
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.period-select:focus {
+  outline: none;
+  background-color: var(--brand-accent);
+  box-shadow: var(--shadow-brutal);
+  transform: translateY(-2px);
+}
+
+.period-select-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  height: 1rem;
+  width: 1rem;
+  transform: translateY(-50%);
+  color: var(--ink);
+}
+
+/* --- Delta Component --- */
+.delta-text {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.delta-up {
+  color: #16a34a; /* A slightly darker green for better text readability */
+}
+
+.delta-down {
+  color: var(--error-accent);
+}
+
+.delta-icon {
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+/* --- Layout Sections --- */
+.metric-header {
+  margin-top: 1.25rem;
+}
+
+.metric-label {
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+}
+
+.metric-value {
+  margin-top: 0.25rem;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 0;
+}
+
+.metric-chart-container {
+  margin-top: 1.5rem;
+  /* Added subtle brutalist wrapper for the chart to make it pop */
+  border: var(--border-black);
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-brutal);
+}
+
+.metric-children {
+  margin-top: 2rem;
+}
+
+.metric-footer {
+  margin-top: 2.5rem;
+}

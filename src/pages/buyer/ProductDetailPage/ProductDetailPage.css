@@ -1,0 +1,243 @@
+:root {
+  --ink: #111827;
+  --ink-soft: #4b5563;
+  --ink-mute: #9ca3af;
+  --brand-accent: #16a34a; 
+  --border-light: 1px solid #e5e7eb;
+  --bg-color: #ffffff;
+  --bg-page: #f9fafb;
+}
+
+.product-detail-page {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.product-detail-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  z-index: 10;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  border: var(--border-light);
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.15s ease;
+}
+
+.icon-btn:hover {
+  background: #ffffff;
+}
+
+.product-detail-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background-color: var(--bg-page);
+}
+
+.product-detail-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  padding: 1.5rem 1.5rem 0;
+  margin: 0;
+}
+
+.product-detail-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-accent);
+  padding: 0.5rem 1.5rem 0;
+  margin: 0;
+}
+
+.label-soft {
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  padding: 0 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.value-bold-inline {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.product-detail-section,
+.mt-4 {
+  padding: 1.5rem;
+}
+
+.product-detail-qty-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.panel-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.75rem 0;
+}
+.mb-0 { margin-bottom: 0 !important; }
+
+.product-detail-desc {
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.divider-thick {
+  height: 8px;
+  background-color: var(--bg-page);
+  width: 100%;
+  border: none;
+  margin: 0;
+}
+
+.value-bold {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Reviews */
+.product-review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.see-all-link {
+  color: var(--brand-accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.see-all-link:hover { text-decoration: underline; }
+
+.review-title {
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9375rem;
+}
+
+.review-body {
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+.review-foot {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.label-mute {
+  color: var(--ink-mute);
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.verified-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--brand-accent);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Quantity Stepper */
+.qty-stepper-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-top: var(--border-light);
+  border-bottom: var(--border-light);
+}
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  border: var(--border-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--bg-color);
+}
+
+.qty-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn:hover {
+  background: var(--bg-page);
+}
+
+.qty-value {
+  min-width: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+/* Sticky Bottom Actions */
+.product-detail-actions {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--bg-color);
+  position: sticky;
+  bottom: 0;
+  border-top: var(--border-light);
+}
+
+.heart-filled {
+  fill: #ef4444;
+  color: #ef4444;
+}
+
+.icon-md { width: 1.25rem; height: 1.25rem; }
+.icon-sm { width: 1rem; height: 1rem; }
+.icon-xs { width: 0.875rem; height: 0.875rem; }

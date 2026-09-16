@@ -1,0 +1,206 @@
+.harvest-tracker-page {
+  /* Neubrutalism Color Palette */
+  --ink: #111827;
+  --ink-soft: #6b7280;
+  --brand-accent: #4ade80; /* High-contrast green */
+  --border-black: 2.5px solid #000;
+  --shadow-brutal: 4px 4px 0 0 #000;
+  --shadow-sm: 2px 2px 0 0 #000;
+}
+
+.harvest-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 48rem; /* Matches max-w-3xl */
+  padding: 0 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .harvest-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* --- Upcoming Harvest Section --- */
+.upcoming-harvest-card {
+  border-radius: 0.75rem;
+  border: var(--border-black);
+  background-color: var(--brand-accent);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-brutal);
+}
+
+.upcoming-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.upcoming-title {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+.calendar-link {
+  font-size: 15px;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2.5px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.calendar-link:hover {
+  border-color: #000;
+}
+
+.upcoming-content {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upcoming-image {
+  height: 72px;
+  width: 92px;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  object-fit: contain;
+  padding: 0.25rem;
+  border: var(--border-black);
+}
+
+.upcoming-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.upcoming-product-name {
+  font-size: 17px;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+}
+
+.progress-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.progress-track {
+  height: 0.75rem;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background-color: #000;
+  transition: width 0.7s ease;
+}
+
+.progress-text {
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 900;
+  color: #000;
+}
+
+/* --- Next Up Section --- */
+.next-up-section {
+  margin-top: 0.5rem;
+}
+
+.next-up-title {
+  margin-bottom: 1rem;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.next-up-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.next-up-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  border: var(--border-black);
+  background-color: #fff;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.next-up-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brutal);
+  background-color: #f9fafb;
+}
+
+.next-up-image {
+  height: 62px;
+  width: 78px;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  border: var(--border-black);
+  background-color: #fff;
+}
+
+.next-up-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.next-up-product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+}
+
+.next-up-date {
+  margin-top: 0.25rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+.next-up-progress {
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 900;
+  color: #000;
+}

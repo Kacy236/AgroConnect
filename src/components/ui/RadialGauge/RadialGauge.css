@@ -1,0 +1,5 @@
+.radial-gauge { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.radial-gauge-svg { transform: rotate(-90deg); }
+.radial-gauge-text { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.radial-gauge-value { font-size: 34px; font-weight: 800; line-height: 1; color: var(--ink); }
+.radial-gauge-caption { margin-top: 0.25rem; font-size: 0.875rem; font-weight: 600; color: var(--brand-600); }

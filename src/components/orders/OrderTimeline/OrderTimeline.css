@@ -1,0 +1,20 @@
+.order-timeline-cancelled { border-radius: 0.75rem; background: var(--status-cancelled-bg); padding: 0.75rem 1rem; font-size: 0.875rem; font-weight: 600; color: var(--status-cancelled); }
+
+.order-timeline { position: relative; }
+.order-timeline-item { display: flex; gap: 1rem; padding-bottom: 1.5rem; }
+.order-timeline-item:last-child { padding-bottom: 0; }
+
+.order-timeline-rail { display: flex; flex-direction: column; align-items: center; }
+.order-timeline-dot {
+  display: flex; height: 1.75rem; width: 1.75rem; flex-shrink: 0; align-items: center; justify-content: center;
+  border-radius: 9999px; border: 2px solid var(--ink-line); background: #fff; color: #fff; transition: background-color .15s, border-color .15s;
+}
+.order-timeline-dot-done { border-color: var(--brand-600); background: var(--brand-600); }
+.order-timeline-line { margin-top: 0.25rem; width: 2px; flex: 1; background: var(--ink-line); }
+.order-timeline-line-done { background: var(--brand-600); }
+
+.order-timeline-text { padding-bottom: 0.25rem; }
+.order-timeline-label { font-size: 15px; font-weight: 700; }
+.order-timeline-label-done { color: var(--ink); }
+.order-timeline-label-pending { color: var(--ink-mute); }
+.order-timeline-note { margin-top: 0.125rem; font-size: 0.875rem; color: var(--ink-soft); }

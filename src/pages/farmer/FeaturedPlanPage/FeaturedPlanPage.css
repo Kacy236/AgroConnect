@@ -1,0 +1,213 @@
+.featured-plan-page {
+  /* Color variables mapped from the original Tailwind classes */
+  --ink: #111827;
+  --ink-soft: #6b7280;
+  --ink-line: #e5e7eb;
+  --brand-50-70: rgba(236, 253, 245, 0.7);
+  --brand-100: #d1fae5;
+  --brand-200: #a7f3d0;
+  --brand-600: #059669;
+  --brand-700: #047857;
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.featured-plan-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 56rem;
+  padding: 0 1rem 3rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .featured-plan-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .intro-text {
+    text-align: center;
+  }
+}
+
+.intro-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.billing-toggle-container {
+  margin: 1.25rem auto 0 auto;
+  display: grid;
+  max-width: 28rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-radius: 0.75rem;
+  border: 1px solid var(--ink-line);
+  padding: 0.25rem;
+}
+
+.toggle-btn {
+  border-radius: 0.5rem;
+  padding: 0.75rem 0;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.toggle-btn.active {
+  background-color: #ffffff;
+  color: var(--ink);
+  box-shadow: var(--shadow-card);
+}
+
+.toggle-btn.inactive {
+  color: var(--ink-soft);
+}
+
+.toggle-btn.yearly-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.toggle-btn.inactive-yearly {
+  background-color: var(--brand-50-70);
+  color: var(--ink-soft);
+}
+
+.save-badge {
+  border-radius: 9999px;
+  background-color: var(--brand-100);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--brand-700);
+}
+
+.plans-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .plans-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid var(--ink-line);
+  padding: 1.25rem;
+}
+
+.plan-card.standard {
+  border-color: var(--ink-line);
+  background-color: #ffffff;
+}
+
+.plan-card.highlighted {
+  border-color: var(--brand-200);
+  background-color: var(--brand-50-70);
+}
+
+.plan-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+
+.plan-price {
+  margin-top: 0.375rem;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0;
+}
+
+.plan-period {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.plan-blurb {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+.perks-list {
+  margin-top: 1.25rem;
+  flex: 1 1 0%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.perk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.perk-icon {
+  margin-top: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  flex-shrink: 0;
+  color: var(--brand-600);
+}
+
+.perk-text {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.perk-text.perk-text-bold {
+  font-weight: 700;
+}
+
+.choose-btn {
+  margin-top: 1.5rem;
+}
+
+.footer-note {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--brand-50-70);
+  padding: 1rem;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--brand-100);
+  color: var(--brand-600);
+}
+
+.footer-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}

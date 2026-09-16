@@ -1,0 +1,15 @@
+.delivery-map { position: relative; width: 100%; overflow: hidden; background: #E8EDDF; }
+.delivery-map-img { height: 100%; width: 100%; object-fit: cover; }
+
+.delivery-map-marker { position: absolute; z-index: 10; transform: translate(-50%, -50%); transition: left 2.6s ease-in-out, top 2.6s ease-in-out; }
+.delivery-map-marker-inner { position: relative; display: flex; height: 1.75rem; width: 1.75rem; align-items: center; justify-content: center; }
+.delivery-map-ping { position: absolute; display: inline-flex; height: 100%; width: 100%; border-radius: 9999px; background: rgba(46, 145, 56, 0.6); animation: map-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite; }
+@keyframes map-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+.delivery-map-dot { position: relative; display: flex; height: 1.75rem; width: 1.75rem; align-items: center; justify-content: center; border-radius: 9999px; background: var(--brand-600); box-shadow: 0 0 0 4px #fff; }
+
+.delivery-map-badge {
+  position: absolute; left: 0.75rem; top: 0.75rem; z-index: 10; display: flex; align-items: center; gap: 0.375rem;
+  border-radius: 9999px; padding: 0.375rem 0.875rem; font-size: 0.875rem; font-weight: 700; color: #fff; box-shadow: var(--shadow-lift);
+}
+.delivery-map-badge-active { background: var(--brand-600); }
+.delivery-map-badge-delivered { background: var(--brand-700); }

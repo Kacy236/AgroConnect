@@ -1,0 +1,113 @@
+.order-overview-page {
+  /* Neubrutalism Color Variables */
+  --ink: #000000;
+  --ink-soft: #4b5563;
+  --ink-mute: #6b7280;
+  --brand-accent: #4ade80;
+  --border-black: 2.5px solid #000000;
+  --shadow-brutal: 4px 4px 0 0 #000000;
+  --shadow-sm: 2px 2px 0 0 #000000;
+}
+
+.recents-section {
+  margin-top: 0.5rem;
+}
+
+.recents-title {
+  margin-bottom: 0.75rem;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.recents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.order-card {
+  border-radius: 0.75rem;
+  border: var(--border-black);
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brutal);
+}
+
+.order-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.order-id {
+  font-size: 17px;
+  font-weight: 900;
+  color: #000000;
+  margin: 0;
+}
+
+.order-card-body {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.order-buyer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.order-total {
+  flex-shrink: 0;
+  font-size: 17px;
+  font-weight: 900;
+  color: #000000;
+  margin: 0;
+}
+
+.order-card-footer {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.order-details-link {
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 2px solid #000000;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.order-details-link:hover {
+  background-color: var(--brand-accent);
+}
+
+.order-date {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-mute);
+  margin: 0;
+}

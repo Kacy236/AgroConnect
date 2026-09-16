@@ -1,0 +1,163 @@
+.rate-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 36rem; /* max-w-xl */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+}
+
+.rate-farmer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rate-farmer-avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.rate-farmer-name {
+  margin-top: 0.75rem;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink, #111827);
+  margin-bottom: 0;
+}
+
+.rate-farmer-phone {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink, #111827);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.rate-meta-list {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 0.25rem;
+  font-size: 17px;
+}
+
+.rate-meta-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rate-meta-dt {
+  font-weight: 700;
+  color: var(--ink, #111827);
+}
+
+.rate-meta-dd {
+  color: var(--ink, #111827);
+  margin: 0;
+}
+
+.rate-section {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--ink-line, #e5e7eb);
+  border-bottom: 1px solid var(--ink-line, #e5e7eb);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.rate-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink, #111827);
+  margin: 0;
+}
+
+.rate-stars-row {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.rate-star-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+
+.rate-star-btn:active {
+  transform: scale(0.9);
+}
+
+.rate-star-icon {
+  height: 2.25rem; /* h-9 */
+  width: 2.25rem; /* w-9 */
+  transition: color 150ms ease, fill 150ms ease;
+}
+
+.rate-star-active {
+  fill: #FFB800;
+  color: #FFB800;
+}
+
+.rate-star-inactive {
+  fill: var(--ink-line, #e5e7eb);
+  color: var(--ink-line, #e5e7eb);
+}
+
+.rate-caption {
+  margin-top: 0.5rem;
+  font-size: 19px;
+  color: var(--ink, #111827);
+  margin-bottom: 0;
+}
+
+.rate-textarea-wrap {
+  margin-top: 1.25rem;
+}
+
+.rate-textarea-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink, #111827);
+}
+
+.rate-textarea-optional {
+  font-weight: 400;
+  color: var(--ink-soft, #6b7280);
+}
+
+.rate-textarea {
+  margin-top: 0.5rem;
+  min-height: 104px;
+  resize: none;
+  line-height: 1.6;
+}
+
+.rate-char-counter {
+  margin-top: 0.25rem;
+  text-align: right;
+  font-size: 15px;
+  color: var(--ink-soft, #6b7280);
+  margin-bottom: 0;
+}
+
+.rate-submit-btn {
+  margin-top: 1.5rem !important;
+}
+
+@media (min-width: 1024px) {
+  .rate-form {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

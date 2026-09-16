@@ -1,0 +1,22 @@
+.welcome { position: relative; display: flex; min-height: 100dvh; flex-direction: column; background: #fff; }
+
+.welcome-hero { position: relative; flex: 1; overflow: hidden; }
+.welcome-hero-image { height: 100%; width: 100%; object-fit: cover; }
+
+.welcome-logo-wrap { position: absolute; left: 1.25rem; top: 1.25rem; }
+.welcome-logo { width: 130px; filter: drop-shadow(0 1px 3px rgba(0,0,0,.15)); }
+
+.welcome-fade {
+  pointer-events: none; position: absolute; inset-inline: 0; bottom: 0; height: 8rem;
+  background: linear-gradient(to top, #fff, transparent);
+}
+
+.welcome-panel {
+  position: relative; z-index: 10; margin-top: -1.5rem; border-radius: 1.5rem 1.5rem 0 0;
+  background: #fff; padding: 0.5rem 1.5rem 2.5rem;
+}
+.welcome-panel-inner { margin: 0 auto; width: 100%; max-width: 28rem; display: flex; flex-direction: column; gap: 1rem; }
+
+@media (min-width: 640px) {
+  .welcome-logo { width: 150px; }
+}

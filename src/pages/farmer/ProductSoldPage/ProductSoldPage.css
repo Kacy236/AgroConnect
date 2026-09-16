@@ -1,0 +1,31 @@
+.best-sellers-card {
+  /* Neubrutalism styling */
+  border-radius: 0.75rem;
+  border: 2.5px solid #000000;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 4px 4px 0 0 #000000;
+  margin-top: 1.5rem;
+}
+
+.best-sellers-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 17px;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* Fallback for smaller screens to ensure the grid doesn't squash too much */
+@media (max-width: 640px) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

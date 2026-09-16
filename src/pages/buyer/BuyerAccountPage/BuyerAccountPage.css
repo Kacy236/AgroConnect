@@ -1,0 +1,169 @@
+:root {
+  --ink: #000000;
+  --ink-soft: #4b5563;
+  --brand-accent: #16a34a;
+  --border-black: 2.5px solid #000000;
+  --shadow-brutal: 4px 4px 0px 0px #000000;
+  --bg-color: #ffffff;
+}
+
+.account-page {
+  padding: 1.5rem 1rem 3rem 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card Styling - The Core of the Neubrutalist Look */
+.card {
+  background-color: var(--bg-color);
+  border: var(--border-black);
+  box-shadow: var(--shadow-brutal);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Profile Card Specifics */
+.account-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.account-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: var(--border-black);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.account-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Utilities */
+.min-w-0 { min-width: 0; }
+.flex-1 { flex: 1; }
+.shrink-0 { flex-shrink: 0; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-0.5 { margin-top: 0.125rem; }
+.label-soft {
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Section holding multiple single-row cards */
+.account-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Row Component inside Cards */
+.account-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  transition: background-color 0.2s ease;
+}
+
+.account-row:hover {
+  background-color: #f3f4f6; /* Subtle grey hover to indicate interactivity */
+}
+
+.account-row-title {
+  display: block;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.account-row-subtitle {
+  display: block;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+  margin-top: 0.125rem;
+}
+
+/* Divide multiple rows in the same card */
+.account-divide .account-row:not(:last-child) {
+  border-bottom: var(--border-black);
+}
+
+/* Icons */
+.icon-sm { width: 1.25rem; height: 1.25rem; }
+.icon-md { width: 1.5rem; height: 1.5rem; }
+.chevron-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.text-brand-500 { color: var(--brand-accent); }
+.text-red { color: #dc2626; }
+
+.lock-icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--brand-accent);
+}
+
+.lock-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Logout Button */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #fee2e2; /* Light red hover state */
+}
+
+.logout-label {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #dc2626;
+}
+
+/* Header Button override if needed */
+.header-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--ink);
+  background-color: var(--bg-color);
+  color: var(--ink);
+  cursor: pointer;
+}

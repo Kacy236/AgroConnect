@@ -1,0 +1,40 @@
+.bell-btn {
+  position: relative; display: flex; height: 2.5rem; width: 2.5rem; align-items: center; justify-content: center;
+  border-radius: 9999px; background: #fff; color: var(--ink); box-shadow: var(--shadow-card); transition: color .15s;
+}
+.bell-btn:hover { color: var(--brand-600); }
+.bell-btn-flat { box-shadow: none; }
+.bell-dot { position: absolute; right: 0.625rem; top: 0.625rem; height: 0.5rem; width: 0.5rem; border-radius: 9999px; background: var(--brand-600); box-shadow: 0 0 0 2px #fff; }
+
+.header-avatar { height: 2.5rem; width: 2.5rem; border-radius: 9999px; object-fit: cover; box-shadow: 0 0 0 2px #fff; }
+
+.mobile-brand-header { display: flex; align-items: center; justify-content: space-between; background: var(--brand-50); padding: 0.75rem 1rem; }
+.mobile-brand-menu { display: flex; height: 2.5rem; width: 2.5rem; align-items: center; justify-content: center; border-radius: 9999px; background: #fff; color: var(--ink); box-shadow: var(--shadow-card); }
+.mobile-brand-spacer { height: 2.5rem; width: 2.5rem; }
+.mobile-brand-logo { width: 150px; }
+
+.greeting-header { padding: 0.75rem 1rem 1rem; }
+.greeting-header-brand { background: var(--brand-50); }
+.greeting-header-white { background: #fff; }
+.greeting-header-row { display: flex; align-items: flex-start; gap: 1rem; }
+.greeting-header-text { min-width: 0; flex: 1; }
+.greeting-header-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 26px; font-weight: 800; line-height: 1.2; color: var(--ink); }
+.greeting-header-subtitle { margin-top: 0.125rem; font-size: 15px; color: var(--ink-soft); }
+.greeting-header-actions { display: none; align-items: center; gap: 0.75rem; }
+.greeting-header-search { width: 260px; }
+
+.page-header { z-index: 30; display: flex; align-items: center; gap: 0.75rem; border-bottom: 1px solid transparent; background: #fff; padding: 0.75rem 1rem; }
+.page-header-sticky { position: sticky; top: 0; }
+.page-header-back { margin-left: -0.5rem; display: flex; height: 2.5rem; width: 2.5rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; color: var(--ink); transition: background-color .15s; }
+.page-header-back:hover { background: var(--brand-50); }
+.page-header-title { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.25rem; font-weight: 700; color: var(--ink); }
+.page-header-title-center { text-align: center; }
+.page-header-right { display: flex; height: 2.5rem; min-width: 40px; align-items: center; justify-content: flex-end; }
+
+@media (min-width: 1024px) {
+  .mobile-brand-header { display: none; }
+  .greeting-header { padding: 1.5rem 2rem 1rem; }
+  .greeting-header-title { font-size: 28px; }
+  .greeting-header-actions { display: flex; }
+  .page-header { padding-left: 2rem; padding-right: 2rem; }
+}

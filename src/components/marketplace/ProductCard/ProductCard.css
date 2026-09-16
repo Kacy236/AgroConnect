@@ -1,0 +1,58 @@
+.product-tile {
+  display: flex; flex-direction: column; overflow: hidden; border-radius: 0.75rem; border: 1px solid var(--ink-line);
+  background: #fff; padding: 0.75rem; text-align: center; transition: border-color .15s, box-shadow .15s; text-decoration: none;
+}
+.product-tile:hover { border-color: var(--brand-300); box-shadow: var(--shadow-card); }
+.product-tile-img-wrap { margin-bottom: 0.5rem; aspect-ratio: 1 / 1; width: 100%; overflow: hidden; border-radius: 0.5rem; background: #fff; }
+.product-tile-img { height: 100%; width: 100%; object-fit: contain; transition: transform .3s; }
+.product-tile:hover .product-tile-img { transform: scale(1.04); }
+.product-tile-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 700; color: var(--ink); }
+.product-tile-price { margin-top: 0.125rem; font-size: 0.875rem; color: var(--ink-soft); }
+
+.product-row {
+  display: flex; align-items: center; gap: 1rem; border-bottom: 1px solid var(--ink-line); background: #fff;
+  padding: 1rem; transition: background-color .15s;
+}
+.product-row:hover { background: rgba(242, 249, 241, 0.4); }
+.product-row-img-link { flex-shrink: 0; }
+.product-row-img { height: 86px; width: 104px; border-radius: 0.5rem; object-fit: contain; }
+.product-row-info { min-width: 0; flex: 1; text-decoration: none; }
+.product-row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 17px; font-weight: 700; color: var(--ink); }
+.product-row-price { margin-top: 0.25rem; font-size: 15px; font-weight: 500; color: var(--ink); }
+.product-row-stock { margin-top: 0.125rem; font-size: 15px; color: var(--ink-mute); }
+.product-row-add {
+  display: flex; height: 2rem; width: 2rem; flex-shrink: 0; align-items: center; justify-content: center;
+  border-radius: 9999px; color: #fff; transition: background-color .15s, transform .1s;
+}
+.product-row-add-active { background: var(--brand-600); }
+.product-row-add-active:hover { background: var(--brand-700); }
+.product-row-add-active:active { transform: scale(0.95); }
+.product-row-add-added { background: var(--brand-700); }
+.product-row-add-disabled { background: var(--ink-line); cursor: not-allowed; }
+
+@media (min-width: 1024px) {
+  .product-row { border-radius: 0.75rem; border: 1px solid var(--ink-line); padding: 1rem 1.25rem; }
+}
+
+.farmer-product-card {
+  display: flex; flex-direction: column; overflow: hidden; border-radius: 0.75rem; border: 1px solid var(--ink-line);
+  background: #fff; transition: box-shadow .15s;
+}
+.farmer-product-card:hover { box-shadow: var(--shadow-card); }
+.farmer-product-card-top { display: block; padding: 0.75rem 1rem 0; text-decoration: none; }
+.farmer-product-card-category { font-size: 0.875rem; font-weight: 500; color: var(--brand-600); }
+.farmer-product-card-img-wrap { margin-top: 0.25rem; aspect-ratio: 4 / 3; width: 100%; overflow: hidden; }
+.farmer-product-card-img { height: 100%; width: 100%; object-fit: contain; }
+.farmer-product-card-img-out { opacity: 0.45; filter: grayscale(1); }
+
+.farmer-product-card-body { display: flex; flex: 1; flex-direction: column; padding: 0 1rem 1rem; }
+.farmer-product-card-row { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; }
+.farmer-product-card-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; }
+.farmer-product-card-name:hover { text-decoration: underline; }
+.farmer-product-card-price { flex-shrink: 0; font-size: 15px; font-weight: 700; color: var(--brand-600); }
+.farmer-product-card-unit { color: var(--ink-soft); }
+.farmer-product-card-stock { margin-top: 0.25rem; font-size: 0.875rem; color: var(--ink-soft); }
+.farmer-product-card-location { margin-top: 0.25rem; display: flex; align-items: center; gap: 0.25rem; font-size: 0.875rem; color: var(--ink-soft); }
+.farmer-product-card-location-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.farmer-product-card-actions { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.farmer-product-card-btn { height: 2.5rem !important; }

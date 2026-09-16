@@ -1,0 +1,366 @@
+/* Layout Containers */
+.profile-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 48rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .profile-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Header Action Button */
+.header-settings-btn {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  color: var(--color-ink, #0f172a);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.header-settings-btn:hover {
+  background-color: var(--color-brand-50, #eff6ff);
+}
+
+.settings-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Profile Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  height: 76px;
+  width: 76px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: -0.125rem;
+  right: -0.125rem;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--color-brand-600, #2563eb);
+  color: white;
+  box-shadow: 0 0 0 2px white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.avatar-edit-btn:hover {
+  background-color: var(--color-brand-700, #1d4ed8);
+}
+
+.camera-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.profile-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.profile-name {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+.profile-verified {
+  margin-top: 0.125rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-brand-600, #2563eb);
+}
+
+.verified-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.verify-link-btn {
+  margin-top: 0.25rem;
+}
+
+.profile-badges {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badge-plan {
+  border-radius: 9999px;
+  background-color: var(--color-brand-50, #eff6ff);
+  padding: 0.375rem 1rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-brand-700, #1d4ed8);
+}
+
+.badge-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 15px;
+  color: var(--color-ink, #0f172a);
+}
+
+.rating-icon {
+  height: 1rem;
+  width: 1rem;
+  fill: #ffb800;
+  color: #ffb800;
+}
+
+.rating-val {
+  font-weight: 700;
+}
+
+.rating-count {
+  color: var(--color-ink-soft, #64748b);
+}
+
+/* Sections */
+.section-card {
+  padding: 1rem;
+}
+
+.section-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-brand-600, #2563eb);
+}
+
+.section-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+/* Personal Information Grid */
+.info-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.detail-wrapper {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.detail-icon {
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+  color: var(--color-brand-500, #3b82f6);
+}
+
+.detail-lucide-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.detail-content {
+  min-width: 0;
+}
+
+.detail-label {
+  display: block;
+  font-size: 15px;
+  color: var(--color-ink-mute, #94a3b8);
+}
+
+.detail-value {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+/* Score Section */
+.score-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .score-layout {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.score-gauge-wrapper {
+  text-align: center;
+}
+
+.score-caption {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+.score-breakdown {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.score-label {
+  font-size: 15px;
+  color: var(--color-ink, #0f172a);
+}
+
+.score-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+/* Action Buttons (Log out / Delete) */
+.actions-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.action-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-ink-line, #e2e8f0);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.action-btn:last-child {
+  border-bottom: none;
+}
+
+.action-btn:hover {
+  background-color: rgba(254, 226, 226, 0.5); /* red-50/50 */
+}
+
+.action-icon {
+  flex-shrink: 0;
+  color: #ef4444; /* red-500 */
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.action-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}
+
+.action-desc {
+  display: block;
+  font-size: 15px;
+  color: var(--color-ink-soft, #64748b);
+}
+
+.action-title-danger {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ef4444; /* red-500 */
+}
+
+.btn-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}

@@ -1,0 +1,16 @@
+.earnings-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.earnings-withdraw-text {
+  text-align: center;
+  font-size: 15px;
+  color: var(--color-ink-soft, #64748b);
+}
+
+.earnings-withdraw-amount {
+  font-weight: 700;
+  color: var(--color-ink, #0f172a);
+}

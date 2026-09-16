@@ -1,0 +1,94 @@
+.auth-split {
+  display: flex;
+  min-height: 100dvh;
+  background: #fff;
+}
+
+.auth-split-col {
+  position: relative;
+  display: flex;
+  min-height: 100dvh;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.auth-split-dots-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.auth-split-dots {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.auth-dot { height: 0.75rem; width: 0.75rem; border-radius: 9999px; }
+.auth-dot-brand { background: var(--brand-500); }
+.auth-dot-ink { background: var(--ink); }
+.auth-dot-light { background: var(--brand-100); }
+
+.auth-split-back {
+  margin-left: 0.75rem;
+  margin-top: 0.5rem;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  color: var(--ink);
+  transition: background-color .15s;
+}
+.auth-split-back:hover { background: var(--brand-50); }
+
+.auth-split-spacer { height: 1.5rem; }
+
+.auth-split-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1.5rem 2.5rem;
+}
+
+.auth-split-content-inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.auth-split-leaves {
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  user-select: none;
+  opacity: 0.9;
+}
+
+.auth-split-image-col { display: none; }
+.auth-split-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .auth-split { padding: 1.5rem; }
+  .auth-split-col { min-height: 0; width: 50%; flex: none; }
+  .auth-split-dots { display: flex; }
+  .auth-split-back { margin-left: 1.25rem; }
+  .auth-split-content { padding-left: 3rem; padding-right: 3rem; }
+  .auth-split-image-col { display: block; width: 50%; flex: none; }
+  .auth-split-image { max-height: calc(100dvh - 3rem); }
+}

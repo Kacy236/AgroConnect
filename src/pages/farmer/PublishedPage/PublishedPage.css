@@ -1,0 +1,9 @@
+.published-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+.published-card {
+  margin: 0 auto; display: flex; max-width: 20rem; align-items: center; gap: 1rem;
+  border-radius: 0.75rem; border: 1px solid var(--ink-line); padding: 0.75rem; text-align: left;
+}
+.published-card-img { height: 4rem; width: 5rem; flex-shrink: 0; border-radius: 0.5rem; object-fit: contain; }
+.published-card-text { min-width: 0; }
+.published-card-name { font-size: 15px; font-weight: 700; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.published-card-meta { font-size: 0.875rem; color: var(--ink-soft); }
